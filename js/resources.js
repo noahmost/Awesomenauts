@@ -7,6 +7,7 @@ game.resources = [
 //        these 2 lines of code set the type of tiles we used in tiled 
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
+        {name: "player", type: "image", src: "data/map/orcSpear.png"},
 
 	/* Atlases 
 	 * @example
@@ -19,7 +20,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
 //        this loads the level 
-        {name: "level01", type: "tmx", src: "data/map/test.tmx"},
+        {name: "level01", type: "tmx", src: "data/map/test1.tmx"},
 
 	/* Background music. 
 	 * @example
