@@ -4,6 +4,7 @@ game.PlayerEntity = me.Entity.extend ({
             image: "player",
             width: 64,
             height: 64,
+//            the actual images width and height
             spritewidth: "64",
             spriteheight: "64",
             getShape: function(){
