@@ -40,9 +40,11 @@ var game = {
 
 	// Run on game resources loaded.
 	"loaded" : function () {
-		me.state.set(me.state.MENU, new game.TitleScreen());
+		me.pool.register("player", game.PlayerEntity, true);
+            
+                me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
-
+                
 		// Start the game.
 		me.state.change(me.state.PLAY);
 	}

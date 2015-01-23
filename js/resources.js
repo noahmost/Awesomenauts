@@ -7,7 +7,7 @@ game.resources = [
 //        these 2 lines of code set the type of tiles we used in tiled 
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
-        {name: "player", type: "image", src: "data/map/orcSpear.png"},
+        {name: "player", type: "image", src: "data/img/orcSpear.png"},
 
 	/* Atlases 
 	 * @example
