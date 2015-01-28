@@ -14,7 +14,7 @@ game.PlayerEntity = me.Entity.extend ({
             
                 }]);
 //            this sets the speed that the character is going
-            this.body.setVelocity(5, 0);
+            this.body.setVelocity(10, 20);
             },
         
         
@@ -23,7 +23,10 @@ game.PlayerEntity = me.Entity.extend ({
             if(me.input.isKeyPressed("right")){
 //                velocity represents our current position, sets position of x by multiplying velocity by me.timer.tick
                     this.body.vel.x += this.body.accel.x * me.timer.tick;
-            }else{
+            }else if(me.input.isKeyPressed("left")){
+                this.body.vel.x -= this.body.accel.x * me.timer.tick;
+            }
+            else{
                 this.body.vel.x=0;
             }
             this.body.update(delta);
