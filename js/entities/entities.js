@@ -28,15 +28,18 @@ game.PlayerEntity = me.Entity.extend ({
             if(me.input.isKeyPressed("right")){
 //                velocity represents our current position, sets position of x by multiplying velocity by me.timer.tick
                     this.body.vel.x += this.body.accel.x * me.timer.tick;
+//                    this flips the character around
                     this.flipX(true);
             }else if(me.input.isKeyPressed("left")){
                 this.body.vel.x -= this.body.accel.x * me.timer.tick;
+//                this flips the character around
                 this.flipX(false);
             }
             else{
                 this.body.vel.x=0;
             }
-            if(this.body.vel.x !== 0){
+//            this sets it so that if the character isnt moving then it shows the idle animation
+                if(this.body.vel.x !== 0){
                     if(!this.renderable.isCurrentAnimation("walk")){
                         this.renderable.setCurrentAnimation("walk");
                     }
